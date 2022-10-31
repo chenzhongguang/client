@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.box {
+  .top {
+    height: 60px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    font-size: 14px;
+    color: #9c9c9c;
+    line-height: 60px;
+    z-index: 10010;
+    top: 0;
+    .top-box {
+      margin: auto;
+      height: 60px;
+      width: calc(100% - 200px);
+    }
+  }
+  // .bottom {
+  //   background-color: pink;
+  //   height: 1000px; // 先给得高度
+  // }
+}

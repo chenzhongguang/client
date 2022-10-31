@@ -1,0 +1,96 @@
+.hot {
+    width: 100%;
+    .hot-box {
+        // height: 553px;
+        background-color: #ffffff;
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 9px;
+        .hot-top {
+            height: 52px;
+            display: flex;
+            justify-content: space-between;
+            .hot-top-left {
+                // width: 108px;
+                height: 50px;
+                // background-color: pink;
+                display: flex;
+                .hot-img {
+                    width: 50px;
+                    height: 50px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                    }
+                }
+                
+                .hot-user {
+                    margin-left: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    .user-box {
+                        color: #435771;
+                        font-size: 14px;
+                    }
+                    .user-time {
+                        color: #c6c6c6;
+                        font-size: 12px;
+                    }
+                }
+            }
+            .hot-top-rigth {
+                width: 90px;
+                height: 50px;
+                // background-color: rgb(225, 207, 210);
+                display: flex;
+                line-height: 50px;
+                .hot-top-rigth-g {
+                    font-size: 14px;
+                    color: #649be1;
+                }
+                .hot-top-rigth-d {
+                    margin-left: 20px;
+                    display: flex;
+                    align-items: center;
+                    div {
+                        border-radius: 50%;
+                        width: 5px;
+                        height: 5px;
+                        margin-right: 3px;
+                        background-color: rgb(68, 55, 57);
+                    }
+                }
+            }
+        }
+        .hot-bottom {
+            min-height: 348px;
+            margin: 10px 10px 20px 65px;
+            .hot-title {
+                height: 58px;
+                font-size: 18px;
+                margin-bottom: 20px;
+                color: #0f2450;
+                -webkit-line-clamp: 2;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .hot-title-img {
+                // height: 300px;
+                // background-color: yellow;
+                display: flex;
+                flex-wrap: wrap;
+                div {
+                    margin: 10px;
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 9px;
+                    background-color: #649be1;
+                }
+            }
+        }
+    }
+}

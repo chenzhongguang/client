@@ -1,0 +1,82 @@
+a {
+  text-decoration: none;
+}
+
+.card {
+  width: 100%;
+  padding: 5px;
+  h5 {
+    font-size: 16px;
+    color: #333;
+    height: 44px;
+  }
+  .card-p {
+    color: #666;
+    height: 40px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow: hidden;
+    font-size: 13px;
+    padding-top: 14px;
+  }
+  .user-info {
+    color: #6c6c6c;
+    font-size: 12px;
+    padding-top: 5px;
+    height: 40px;
+    display: flex;
+    justify-self: start;
+    align-items: center;
+    .avatar {
+      width: 40px;
+      height: 40px;
+      margin-right: 8px;
+      border-radius: 50%;
+      overflow: hidden;
+      > img.avatar-pic {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+    }
+    .username{
+      color: #333;
+    }
+    .spot {
+      display: block;
+      width: 4px;
+      height: 4px;
+      background: #d8d8d8;
+      margin: 11px 6px;
+      border-radius: 100%;
+    }
+  }
+}
+
+
+.loading-box {
+  width: 200px;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .loading-content {
+    width: 154px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    background: #4c9aec;
+    cursor: pointer;
+    background-image: linear-gradient(#4790e5, #52a5f4);
+    transition: all 0.3s;
+    &:hover {
+      box-shadow: 3px 3px 10px #6a9fdc, -3px -3px 10px #c5d5e7;
+      transform: scale(1.1);
+    }
+  }
+}

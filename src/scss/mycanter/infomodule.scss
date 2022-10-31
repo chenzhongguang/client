@@ -1,0 +1,88 @@
+
+.info-container{
+    width: 1200px;
+    margin: 0 auto;
+    .infonav{
+        display: flex;
+        .info {
+            display:flex;
+        }
+        .info li {
+            width: 90px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            color: #999;
+            font-size: 18px;
+            position: relative;
+            margin: 10px 20px 0px 0px;
+            cursor: pointer;
+            list-style-type:none;
+        }
+        .info li:before {
+            content:'';
+            height:2px;
+            background-color:#333;
+            width:100%;
+            position:absolute;
+            left:0;
+            bottom:0;
+            display: none;
+            
+        }
+        .info li:active:before {
+            display: block;
+        }
+        .info li:hover:before{
+            display: block;
+        }
+        .info li:hover{
+            display: block;
+            color:black;
+        }
+    }
+
+    .info-bottom{
+        margin-top: 50px;
+        display: flex;
+
+      
+        .info-content{
+            margin: 50px 0 0 100px;
+            margin-bottom: 200px;
+            .info-nickname{
+                display: flex;
+                height: 50px;
+                .nickleft{
+                    color: #333;
+                    font-size: 18px;
+                    text-align: center;
+                    line-height: 50px;
+                }
+                .nickright{
+                    font-size: 30px;
+                    color: #333;
+                    margin-left: 50px;
+                }
+            }
+
+            .info-gender{
+                display: flex;
+                height: 50px;
+                .gender-left{
+                    color: #333;
+                    font-size: 18px;
+                    text-align: center;
+                    line-height: 50px;
+                }
+                .gender-right{
+                    color: #333;
+                    font-size: 18px;
+                    text-align: center;
+                    line-height: 50px;
+                    margin-left: 50px;
+                }
+            }
+        }
+    }
+}

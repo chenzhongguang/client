@@ -1,0 +1,122 @@
+body{
+  background-color: #fcfcfc;
+}
+.publish-box {
+  width: 100%;
+  .article_top {
+    height: 80px;
+    font-size: 12px;
+    color: #6c6c6c;
+    box-shadow: 0 15px 15px 0 rgba(15, 37, 64, 0.1);
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 150;
+    background: #fff;
+    .article_nav {
+      width: 1220px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      ul {
+        height: 80px;
+        line-height: 80px;
+        display: flex;
+      }
+      .ar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .write {
+        width: 110px;
+        height: 40px;
+        border-radius: 20px;
+        margin-left: 20px;
+        background-color: #ededed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+          box-shadow: 3px 3px 10px #6a9fdc, -3px -3px 10px #c5d5e7;
+          transform: scale(1.1);
+          position: relative;
+          z-index: 2;
+          border-color: transparent;
+        }
+        h5 {
+          color: #999;
+          font-size: 20px;
+          line-height: 40px;
+          margin: 0px !important;
+        }
+      }
+    }
+    h4 {
+      font-size: 24px;
+      color: #424e66;
+    }
+    span.shu {
+      display: block;
+      width: 2px;
+      height: 24px;
+      background: #e5e5e5;
+      margin: 28px 10px;
+    }
+    p {
+      color: #666;
+      font-size: 16px;
+    }
+  }
+}
+.pub-content {
+  width: 835px;
+  min-height: 900px;
+  margin: 140px auto 60px;
+  background-color: #fcfcfc;
+  .upload {
+    width: 100%;
+    min-height: 165px;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .avatar-uploader {
+      width: 102px;
+      height: 102px;
+      color: #424e66;
+      text-align: center;
+      line-height: 102px;
+      border: 1px dashed #111;
+      > span {
+        .ant-upload-list .ant-upload-list-text {
+          display: none !important;
+        }
+      }
+    }
+  }
+  .head-title {
+    width: 100%;
+    height: 60px;
+    margin: 30px 0px;
+    .input-title {
+      height: 100%;
+      width: 100%;
+      padding: 0px 20px;
+      font-size: 30px;
+      outline: none;
+      border: none;
+      background-color: #fcfcfc;
+    }
+  }
+  .editer{
+    min-height: 900px;
+
+    .w-e-scroll{
+      background-color: #fcfcfc !important;
+    }
+  }
+}

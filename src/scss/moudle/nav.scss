@@ -1,0 +1,149 @@
+.top {
+  height: 60px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  font-size: 14px;
+  color: #e4e5e5;
+  line-height: 60px;
+  z-index: 10010;
+  top: 0;
+}
+
+.nav-box {
+  min-width: calc(100% - 200px);
+  height: 60px;
+  margin: 0 100px;
+  display: flex;
+  justify-content: space-between;
+
+  .nav-left {
+    min-width: 240px;
+    width: 240px;
+    height: 100%;
+    cursor: pointer;
+
+    h1 {
+      color: #9c9c9c;
+      font-size: 40px;
+    }
+  }
+
+  .nav-rigth {
+    min-width: 240px;
+    width: 240px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 15px;
+    font-weight: bold;
+
+    .i1 {
+      font-size: 24px;
+      color: #9a9a9a;
+      line-height: 60px;
+    }
+
+    .i2 {
+      font-size: 30px;
+      color: #9a9a9a;
+      line-height: 60px;
+      margin-right: 40px;
+      .iconhover{
+        cursor: pointer;
+        &:hover{
+          color: #fff;
+        }
+      }
+      .anticon {
+        margin-right: 20px;
+        font-size: 23px;
+      }
+
+      .loginavatar {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .nav-center {
+    min-width: 560px;
+    width: 560px;
+
+    .navcenter-box {
+      width: 100%;
+      display: flex;
+      color: #9c9c9c;
+      cursor: pointer;
+
+      div {
+        flex: 1;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+//
+.usercont {
+  visibility: hidden;
+  position: absolute;
+  display: block;
+  background-color: #fff;
+  color: #4d4b4b;
+  font-size: 14px;
+  padding: 8px 0;
+  margin-top: 2px;
+  border-radius: 4px;
+  width: 135px;
+  right: 90px;
+  top: 58px;
+
+  .sjx {
+    right: 58px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-bottom-color: #fff;
+    top: -16px;
+  }
+
+  li {
+    border-radius: 8px;
+    width: 115px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 auto;
+    padding-left:10px;
+    cursor: pointer;
+    text-align: center;
+    color: rgb(168, 160, 160);
+    display: flex;
+    align-items: center;
+    &:hover{
+      background-color: #e4e5e5;
+    }
+    >itemi{
+      height: 35px;
+    }
+  }
+}
+
+//
+.spanm {
+  display: inline-block;
+
+  &:hover .usercont {
+    visibility: inherit;
+  }
+}

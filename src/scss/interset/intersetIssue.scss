@@ -1,0 +1,35 @@
+.issue{
+    width: 100%;
+    .issue-top{
+        min-height: 100px;
+        width: 100%;
+        // background-color: yellow;
+        .issue-img{
+            width: 100%;
+            min-height: 0;
+        }
+    }
+    .issue-bottom{
+        margin-top: 20px;
+        height: 34px;
+        display: flex;
+        // background-color: pink;
+        justify-content: space-between;
+        .iusse-bottom-box{
+            background-color: #4790E5;
+            font-size: 14px;
+            color: #FFFFFF;
+            line-height: 34px;
+            padding: 0 33px;
+            margin: 0 10px;
+            height: 34px;
+            cursor: pointer;
+            border-radius: 19px;
+            transition: all .3s;
+        }
+        .iusse-bottom-box:hover{
+            transform: scale(1.09);
+            box-shadow: 3px 3px 10px rgba($color: #000000, $alpha: .5);
+        }
+    }
+}
